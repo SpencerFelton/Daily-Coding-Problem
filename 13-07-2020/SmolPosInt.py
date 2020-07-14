@@ -11,7 +11,7 @@ def smolInt(listToSort):
     if smallestVal > 1: # if 1st element is more than 1, smallest possible missing int is 1
         return 1
 
-    for x in range(1, len(noDupesList)): #check between 2nd and last element
+    for x in range(0, len(noDupesList)):
         if x == len(noDupesList)-1: #final element
             if noDupesList[x] > smallestVal + 1: # more than 1 above current smallest value in chain
                 return smallestVal + 1 # so next smallest int is the smallest value + 1
@@ -21,4 +21,4 @@ def smolInt(listToSort):
             return smallestVal + 1
         smallestVal = noDupesList[x] # current element is in the chain x-1, x, x+1 etc, so it's the new smallest val
 
-print(smolInt([1,4,5]))
+print(smolInt([]))
