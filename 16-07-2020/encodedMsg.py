@@ -8,10 +8,10 @@ def fib(n):
         n -= 1
     return(fib)
 
-fib(5)
-
 def encoded(n):
         maxEncodings = fib(int(len(n)))
         print(maxEncodings)
+        return maxEncodings
 
-encoded("12345678")
+assert(encoded("12345678")) == 34
+assert(encoded("123")) == 3
