@@ -2,7 +2,7 @@ def fib(n):
     iniFib = 0
     fib = 1
     while n >=1:
-        temp = fib
+        temp = fib #temp value to use later to save the current fib value
         fib = fib + iniFib
         iniFib = temp
         n -= 1
