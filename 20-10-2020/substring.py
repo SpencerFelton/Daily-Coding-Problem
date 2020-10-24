@@ -6,6 +6,7 @@ def sub_string(substring, string):
     print(sub)
     return sub
 
+#test case:
 string1 = "aaaaaaaaaaaaa"
 string1 = list(string1)
 substring = "eci"
