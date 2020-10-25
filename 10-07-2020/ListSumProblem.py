@@ -1,4 +1,4 @@
-def isSolution(list, value):
+def isSolution(list, value): #find if 2 items in the list sum to the value
     possible_solutions = []
     for values in list:
         required_solution = value - values
